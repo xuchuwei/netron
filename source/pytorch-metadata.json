@@ -5344,5 +5344,59 @@
         { "name": "?", "type": "Tensor" }
       ]
     }
+  },
+  {
+    "name": "torch.all",
+    "schema": {
+      "inputs": [
+        { "name": "self", "type": "Tensor" }
+      ],
+      "outputs": [
+        { "name": "output", "type": "Tensor" }
+      ]
+    }
+  },
+  {
+    "name": "torch.any",
+    "schema": {
+      "inputs": [
+        { "name": "self", "type": "Tensor" }
+      ],
+      "outputs": [
+        { "name": "output", "type": "Tensor" }
+      ]
+    }
+  },
+  {
+    "name": "torch.renorm",
+    "schema": {
+      "attributes": [
+        { "name": "p", "type": "Scalar" },
+        { "name": "dim", "type": "int64" },
+        { "name": "maxnorm", "type": "Scalar" }
+      ],
+      "inputs": [
+        { "name": "self", "type": "Tensor" }
+      ],
+      "outputs": [
+        { "name": "output", "type": "Tensor" }
+      ]
+    }
+  },
+  {
+    "name": "torch.unfold",
+    "schema": {
+      "attributes": [
+        { "name": "dimension", "type": "int64" },
+        { "name": "size", "type": "int64" },
+        { "name": "step", "type": "int64" }
+      ],
+      "inputs": [
+        { "name": "self", "type": "Tensor" }
+      ],
+      "outputs": [
+        { "name": "output", "type": "Tensor" }
+      ]
+    }
   }
 ]
